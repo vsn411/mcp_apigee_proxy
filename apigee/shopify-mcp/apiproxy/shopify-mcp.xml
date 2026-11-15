@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="1" name="shopify-mcp">
+  <DisplayName>Shopify MCP</DisplayName>
+  <Description>Governed front door for the Shopify MCP server on Cloud Run. Basic clients can read products. Advanced clients can also duplicate and optimize listings.</Description>
+  <Policies>
+    <Policy>AM-CopyQueryApiKey</Policy>
+    <Policy>VerifyAPIKey-1</Policy>
+    <Policy>SpikeArrest-Tier</Policy>
+    <Policy>Quota-PerToolLimit</Policy>
+    <Policy>JS-AuthorizeTool</Policy>
+    <Policy>RF-ToolDenied</Policy>
+    <Policy>JS-FilterTools</Policy>
+    <Policy>AM-StripClientKey</Policy>
+  </Policies>
+  <ProxyEndpoints>
+    <ProxyEndpoint>default</ProxyEndpoint>
+  </ProxyEndpoints>
+  <TargetEndpoints>
+    <TargetEndpoint>default</TargetEndpoint>
+  </TargetEndpoints>
+</APIProxy>

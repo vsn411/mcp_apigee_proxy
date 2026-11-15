@@ -1,0 +1,14 @@
+{
+  "name": "shopify-mcp-basic",
+  "displayName": "Shopify MCP Basic",
+  "description": "Read-only product tools at 10 requests per second.",
+  "approvalType": "auto",
+  "proxies": ["shopify-mcp"],
+  "quota": "600",
+  "quotaInterval": "1",
+  "quotaTimeUnit": "minute",
+  "attributes": [
+    {"name": "spike_rate", "value": "10ps"},
+    {"name": "allowed_tools", "value": "search_products,get_product_details"}
+  ]
+}

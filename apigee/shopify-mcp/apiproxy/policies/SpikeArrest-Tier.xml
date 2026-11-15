@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<SpikeArrest continueOnError="false" enabled="true" name="SpikeArrest-Tier">
+  <DisplayName>Tier rate limit</DisplayName>
+  <Rate ref="verifyapikey.VerifyAPIKey-1.apiproduct.spike_rate"/>
+  <Identifier ref="verifyapikey.VerifyAPIKey-1.client_id"/>
+  <UseEffectiveCount>true</UseEffectiveCount>
+</SpikeArrest>

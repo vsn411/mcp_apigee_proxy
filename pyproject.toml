@@ -1,0 +1,14 @@
+[project]
+name = "shopify-mcp-cloudrun"
+version = "0.1.0"
+description = "Shopify MCP server for Cloud Run, with an Apigee front door."
+requires-python = ">=3.10"
+dependencies = [
+  "fastmcp==3.2.4",
+  "httpx>=0.27",
+  "uvicorn>=0.32",
+  "google-cloud-secret-manager>=2.21",
+]
+
+[tool.setuptools.packages.find]
+include = ["shopify_mcp*"]

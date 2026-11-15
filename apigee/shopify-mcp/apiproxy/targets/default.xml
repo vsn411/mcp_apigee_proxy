@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<TargetEndpoint name="default">
+  <Description>Private Cloud Run service. Apigee calls it with a Google ID token for the proxy service account.</Description>
+  <PreFlow name="PreFlow">
+    <Request/>
+    <Response/>
+  </PreFlow>
+  <PostFlow name="PostFlow">
+    <Request/>
+    <Response/>
+  </PostFlow>
+  <HTTPTargetConnection>
+    <URL>https://REPLACE_CLOUD_RUN_HOST/mcp</URL>
+    <Authentication>
+      <GoogleIDToken>
+        <Audience>https://REPLACE_CLOUD_RUN_HOST</Audience>
+      </GoogleIDToken>
+    </Authentication>
+    <Properties>
+      <Property name="supports.http11">true</Property>
+      <Property name="target.copy.pathsuffix">false</Property>
+    </Properties>
+  </HTTPTargetConnection>
+</TargetEndpoint>

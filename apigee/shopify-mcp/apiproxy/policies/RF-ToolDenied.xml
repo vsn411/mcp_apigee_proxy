@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RaiseFault continueOnError="false" enabled="true" name="RF-ToolDenied">
+  <DisplayName>Reject unentitled tool</DisplayName>
+  <FaultResponse>
+    <Set>
+      <StatusCode>401</StatusCode>
+      <ReasonPhrase>Unauthorized</ReasonPhrase>
+      <Payload contentType="application/json">\{"fault":\{"faultstring":"Access denied: this API product does not include the requested tool","detail":\{"errorcode":"access_denied"\}\}\}</Payload>
+    </Set>
+  </FaultResponse>
+</RaiseFault>

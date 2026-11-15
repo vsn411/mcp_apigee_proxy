@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "shopify": {
+      "url": "https://YOUR_APIGEE_HOST/mcp",
+      "headers": {
+        "x-api-key": "YOUR_APP_KEY"
+      }
+    }
+  }
+}

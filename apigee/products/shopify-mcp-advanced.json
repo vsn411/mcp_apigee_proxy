@@ -1,0 +1,14 @@
+{
+  "name": "shopify-mcp-advanced",
+  "displayName": "Shopify MCP Advanced",
+  "description": "All Shopify tools, including writes, at 30 requests per second.",
+  "approvalType": "auto",
+  "proxies": ["shopify-mcp"],
+  "quota": "1800",
+  "quotaInterval": "1",
+  "quotaTimeUnit": "minute",
+  "attributes": [
+    {"name": "spike_rate", "value": "30ps"},
+    {"name": "allowed_tools", "value": "*"}
+  ]
+}
