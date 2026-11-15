@@ -29,6 +29,8 @@ Basic allows `search_products` and `get_product_details`. Advanced allows every 
 
 The Apigee environment must be Intermediate or Comprehensive. A Base environment cannot deploy this proxy or create API products.
 
+Setup, the Apigee versus Cloud Run split, and the IAM each side needs are in [SETUP.md](SETUP.md).
+
 ## Deploy
 
 Create the proxy service account first, then:
